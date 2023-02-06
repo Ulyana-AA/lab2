@@ -19,7 +19,7 @@ namespace lab2 // Note: actual namespace depends on the project name.
             
             for (int i = 0; i < mas1.GetUpperBound(0) + 1; i++)
             {
-                Console.WriteLine("Введите элементы строки массива: ");
+                Console.WriteLine($"Введите элементы {i + 1}-ой строки массива: ");
                 for (int j = 0; j < mas1.GetUpperBound(1) + 1; j++)
                 {
                     mas1[i, j] = Convert.ToInt32(Console.ReadLine());
