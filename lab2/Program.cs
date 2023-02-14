@@ -29,8 +29,23 @@ namespace lab2 // Note: actual namespace depends on the project name.
                 sum = 0;
             }
 
-            for (int i = 0; i < mas2.Length; i++) Console.Write($"{mas2[i]} ");
-   
+            Console.WriteLine();
+
+            for (int i = 0; i < mas1.GetUpperBound(0) + 1; i++)
+            {
+                for (int j = 0; j < mas1.GetUpperBound(1) + 1; j++)
+                {
+                    Console.Write($" {mas1[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+            Console.Write("Итоговый массив: [");
+            for (int i = 0; i < mas2.Length; i++) Console.Write($" {mas2[i]} ");
+            Console.Write("]");
+
+            
         }
     }
 }
